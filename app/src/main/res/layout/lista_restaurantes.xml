@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/background_restaurante"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#594c35"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#594c35">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="top|left">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logo_rest"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/circle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tipo_rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextGray"
+                android:textSize="8sp"
+                android:text="@string/tipo_rest"/>
+
+            <TextView
+                android:id="@+id/nombre_rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="@string/nombre_rest"/>
+
+            <TextView
+                android:id="@+id/promedio_rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextGreen"
+                android:textSize="25sp"
+                android:text="@string/promedio_rest"/>
+
+            <TextView
+                android:id="@+id/horario_rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextGray"
+                android:textSize="8sp"
+                android:text="@string/horario_rest"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:gravity="bottom|right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/circle" />
+                <TextView
+                    android:id="@+id/fav_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="9sp"
+                    android:text="@string/fav_rest"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

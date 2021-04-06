@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.urest.MainActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#594c35">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:layout_margin="12dp"
+            android:textColor="#58595b"
+            android:textSize="16dp"
+            android:hint="@string/search"
+            android:inputType="textVisiblePassword"
+            android:textColorHint="@color/colorTextGrayDark"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:background="@drawable/search"/>
+
+        <ListView
+            android:id="@+id/lista_restaurantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:dividerHeight="0.5dp"
+            android:headerDividersEnabled="true" />
+
+
+    </LinearLayout>
+</LinearLayout>
